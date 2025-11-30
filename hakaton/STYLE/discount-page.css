@@ -1,6 +1,5 @@
 ﻿body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, sans-serif;
+    font-family: 'Inter', sans-serif;
   background-color: var(--mainbg);
   color: #ffffff;
   overflow-x: hidden;

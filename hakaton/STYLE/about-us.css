@@ -220,7 +220,7 @@ nav {
 
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+   font-family: 'Inter', sans-serif;
   background-color: var(--mainbg);
   color: #fff;
   min-height: 100vh;

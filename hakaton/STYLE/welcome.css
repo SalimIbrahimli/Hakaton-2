@@ -1,10 +1,9 @@
-﻿
-
-body {
+﻿body {
   background: radial-gradient(circle at top, #1d4ed8 0, #020617 65%);
   color: #e5e7eb;
   min-height: 100vh;
   overflow: hidden;
+  font-family: "Inter", sans-serif;
 }
 
 nav {
@@ -42,7 +41,6 @@ nav {
   width: 100%;
 }
 
-
 .feature-card,
 .destination-card,
 .tip-card,
@@ -67,7 +65,6 @@ nav {
   transform: translateY(-6px) scale(1.01);
 }
 
-
 .feature-icon,
 .destination-icon,
 .tip-icon,
@@ -86,7 +83,6 @@ nav {
   box-shadow: 0 18px 40px rgba(15, 23, 42, 0.95);
 }
 
-
 .icon-click-spin {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
@@ -95,14 +91,12 @@ nav {
   transform: scale(0.9) rotate(-10deg);
 }
 
-
 .popularity-fill {
   height: 100%;
   border-radius: 3px;
   transition: width 1.1s ease-out;
   width: 0;
 }
-
 
 .reveal {
   opacity: 0;
@@ -124,7 +118,6 @@ nav {
 .reveal.delay-3 {
   transition-delay: 0.3s;
 }
-
 
 .chat-button {
   animation: chatPulse 2.4s ease-in-out infinite;
@@ -152,7 +145,6 @@ nav {
   }
 }
 
-
 .compass-button {
   box-shadow: 0 14px 35px rgba(15, 23, 42, 0.9);
 }
@@ -161,11 +153,9 @@ nav {
   box-shadow: 0 20px 45px rgba(15, 23, 42, 1);
 }
 
-
 .social-link {
   box-shadow: 0 10px 25px rgba(15, 23, 42, 0.7);
 }
-
 
 .hero-image-container {
   transform-origin: center;
@@ -225,7 +215,6 @@ nav {
   box-shadow: 0 8px 20px rgba(59, 130, 246, 0.4);
 }
 
-
 .welcome-page {
   max-width: 1200px;
   margin: 0 auto;
@@ -233,14 +222,11 @@ nav {
   position: relative;
 }
 
-
 .welcome-hero {
   text-align: center;
   position: relative;
   z-index: 2;
 }
-
-
 
 .welcome-orbit {
   width: 180px;
@@ -249,17 +235,13 @@ nav {
   position: relative;
   border-radius: 50%;
   background: radial-gradient(circle at 20% 0, #f9a8ff, #6366f1 55%, #1d4ed8);
-  box-shadow:
-    0 0 40px rgba(129, 140, 248, 0.9),
+  box-shadow: 0 0 40px rgba(129, 140, 248, 0.9),
     0 0 90px rgba(236, 72, 153, 0.7);
   display: flex;
   align-items: center;
   justify-content: center;
-  animation:
-    orbitPulse 4s ease-in-out infinite,
-    orbitRotate 22s linear infinite;
+  animation: orbitPulse 4s ease-in-out infinite, orbitRotate 22s linear infinite;
 }
-
 
 .welcome-orbit-inner {
   width: 90px;
@@ -280,7 +262,6 @@ nav {
   animation: iconFloat 3.2s ease-in-out infinite;
 }
 
-
 .welcome-orbit::before {
   content: "";
   position: absolute;
@@ -290,7 +271,6 @@ nav {
   box-shadow: 0 0 12px rgba(248, 250, 252, 0.5);
   animation: ringRotate 18s linear infinite;
 }
-
 
 .orbit-dot {
   position: absolute;
@@ -302,61 +282,116 @@ nav {
   animation: dotPulse 2.8s ease-in-out infinite alternate;
 }
 
+.d1 {
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.d2 {
+  top: 18%;
+  right: -4px;
+}
+.d3 {
+  top: 50%;
+  right: -10px;
+  transform: translateY(-50%);
+}
+.d4 {
+  bottom: 18%;
+  right: -4px;
+}
+.d5 {
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.d6 {
+  bottom: 18%;
+  left: -6px;
+}
+.d7 {
+  top: 50%;
+  left: -10px;
+  transform: translateY(-50%);
+}
+.d8 {
+  top: 18%;
+  left: -4px;
+}
 
-.d1 { top: -6px; left: 50%; transform: translateX(-50%); }
-.d2 { top: 18%; right: -4px; }
-.d3 { top: 50%; right: -10px; transform: translateY(-50%); }
-.d4 { bottom: 18%; right: -4px; }
-.d5 { bottom: -6px; left: 50%; transform: translateX(-50%); }
-.d6 { bottom: 18%; left: -6px; }
-.d7 { top: 50%; left: -10px; transform: translateY(-50%); }
-.d8 { top: 18%; left: -4px; }
-
-
-.d1 { animation-delay: 0s; }
-.d2 { animation-delay: 0.2s; }
-.d3 { animation-delay: 0.4s; }
-.d4 { animation-delay: 0.6s; }
-.d5 { animation-delay: 0.8s; }
-.d6 { animation-delay: 1s; }
-.d7 { animation-delay: 1.2s; }
-.d8 { animation-delay: 1.4s; }
-
+.d1 {
+  animation-delay: 0s;
+}
+.d2 {
+  animation-delay: 0.2s;
+}
+.d3 {
+  animation-delay: 0.4s;
+}
+.d4 {
+  animation-delay: 0.6s;
+}
+.d5 {
+  animation-delay: 0.8s;
+}
+.d6 {
+  animation-delay: 1s;
+}
+.d7 {
+  animation-delay: 1.2s;
+}
+.d8 {
+  animation-delay: 1.4s;
+}
 
 .welcome-orbit.orbit-boost {
-  box-shadow:
-    0 0 60px rgba(129, 140, 248, 1),
-    0 0 130px rgba(236, 72, 153, 0.95),
-    0 0 200px rgba(56, 189, 248, 0.8);
+  box-shadow: 0 0 60px rgba(129, 140, 248, 1),
+    0 0 130px rgba(236, 72, 153, 0.95), 0 0 200px rgba(56, 189, 248, 0.8);
   transform: scale(1.04);
 }
 
-
-
 @keyframes orbitPulse {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.06); }
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.06);
+  }
 }
 
 @keyframes orbitRotate {
-  to { transform: rotate(360deg); }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes ringRotate {
-  to { transform: rotate(-360deg); }
+  to {
+    transform: rotate(-360deg);
+  }
 }
 
 @keyframes iconFloat {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-7px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
 }
 
 @keyframes dotPulse {
-  from { transform: scale(0.9); opacity: 0.8; }
-  to   { transform: scale(1.15); opacity: 1; }
+  from {
+    transform: scale(0.9);
+    opacity: 0.8;
+  }
+  to {
+    transform: scale(1.15);
+    opacity: 1;
+  }
 }
-
-
 
 .welcome-title {
   font-size: 44px;
@@ -377,8 +412,6 @@ nav {
   font-size: 15px;
   color: #cbd5f5;
 }
-
-
 
 .welcome-actions {
   display: flex;
@@ -406,7 +439,6 @@ nav {
   background: linear-gradient(135deg, #2563eb, #0ea5e9);
   color: #f9fafb;
   box-shadow: 0 18px 40px rgba(37, 99, 235, 0.75);
-  
 }
 
 .btn-primary .arrow {
@@ -435,8 +467,6 @@ nav {
   color: #e5e7eb;
 }
 
-
-
 .bg-bubble {
   position: absolute;
   border-radius: 999px;
@@ -447,19 +477,48 @@ nav {
   z-index: 1;
 }
 
-.b1 { width: 140px; height: 140px; top: 20%; left: 5%; }
-.b2 { width: 90px; height: 90px; top: 72%; left: 15%; }
-.b3 { width: 110px; height: 110px; top: 30%; right: 10%; }
-.b4 { width: 70px; height: 70px; bottom: 18%; right: 22%; }
-.b5 { width: 60px; height: 60px; top: 10%; right: 40%; }
-
-@keyframes floatBubble {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-18px); }
-  100% { transform: translateY(0); }
+.b1 {
+  width: 140px;
+  height: 140px;
+  top: 20%;
+  left: 5%;
+}
+.b2 {
+  width: 90px;
+  height: 90px;
+  top: 72%;
+  left: 15%;
+}
+.b3 {
+  width: 110px;
+  height: 110px;
+  top: 30%;
+  right: 10%;
+}
+.b4 {
+  width: 70px;
+  height: 70px;
+  bottom: 18%;
+  right: 22%;
+}
+.b5 {
+  width: 60px;
+  height: 60px;
+  top: 10%;
+  right: 40%;
 }
 
-
+@keyframes floatBubble {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-18px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 
 @media (max-width: 768px) {
   .welcome-page {
@@ -577,5 +636,3 @@ footer {
   background: rgba(59, 130, 246, 0.3);
   transform: translateY(-2px);
 }
-
-
