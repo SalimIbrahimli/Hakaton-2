@@ -1,9 +1,9 @@
-/* ===================================== */
-/*   GLOBAL RESPONSIVE STYLES            */
-/*   (bütün səhifələr üçün)              */
-/* ===================================== */
+﻿
 
-/* Large tablets / small laptops */
+
+
+
+
 @media (max-width: 1200px) {
   nav {
     padding: 16px 40px;
@@ -14,7 +14,7 @@
   }
 }
 
-/* Tablets */
+
 @media (max-width: 992px) {
   nav {
     padding: 12px 24px;
@@ -55,7 +55,7 @@
   }
 }
 
-/* Mobiles */
+
 @media (max-width: 768px) {
   nav {
     padding: 10px 16px;
@@ -106,7 +106,7 @@
   }
 }
 
-/* Small phones */
+
 @media (max-width: 480px) {
   .hero-title,
   .routes-title,
@@ -137,7 +137,7 @@
   }
 }
 
-/* Lang switcher buttons */
+
 .lang-switcher {
   display: flex;
   align-items: center;
@@ -165,3 +165,5 @@
   color: #f9fafb;
   border-color: #3b82f6;
 }
+
+

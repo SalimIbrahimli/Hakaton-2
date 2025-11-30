@@ -1,6 +1,4 @@
-/* ===========================
-   ÜMUMİ FON
-=========================== */
+﻿
 
 body {
   background: radial-gradient(circle at top, #1d4ed8 0, #020617 65%);
@@ -8,7 +6,7 @@ body {
   min-height: 100vh;
   overflow: hidden;
 }
-/* Navigation */
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -21,7 +19,7 @@ nav {
   background: rgba(15, 28, 46, 0.9);
   backdrop-filter: blur(10px);
 }
-/* NAVBAR ALT XƏTT EFFEKTI */
+
 .nav-links a {
   position: relative;
   padding-bottom: 4px;
@@ -44,7 +42,7 @@ nav {
   width: 100%;
 }
 
-/* KARTLARA PREMIUM BOX-SHADOW */
+
 .feature-card,
 .destination-card,
 .tip-card,
@@ -69,7 +67,7 @@ nav {
   transform: translateY(-6px) scale(1.01);
 }
 
-/* ICONLU BLOKLARA BOX-SHADOW */
+
 .feature-icon,
 .destination-icon,
 .tip-icon,
@@ -88,7 +86,7 @@ nav {
   box-shadow: 0 18px 40px rgba(15, 23, 42, 0.95);
 }
 
-/* CLICK OLANDA FİRLƏNMƏ EFFEKTI */
+
 .icon-click-spin {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
@@ -97,7 +95,7 @@ nav {
   transform: scale(0.9) rotate(-10deg);
 }
 
-/* TREND FAİZ ZOLAQLARI ANİMASİYA ÜÇÜN */
+
 .popularity-fill {
   height: 100%;
   border-radius: 3px;
@@ -105,7 +103,7 @@ nav {
   width: 0;
 }
 
-/* SCROLL-LA GƏLƏN ANİMASİYA */
+
 .reveal {
   opacity: 0;
   transform: translateY(30px) scale(0.98);
@@ -127,7 +125,7 @@ nav {
   transition-delay: 0.3s;
 }
 
-/* CHAT BUTTON PARILDAMA + NƏFƏS ANİMASİYASI */
+
 .chat-button {
   animation: chatPulse 2.4s ease-in-out infinite;
 }
@@ -154,7 +152,7 @@ nav {
   }
 }
 
-/* KOMPAS BUTTON PARLAQLIQ */
+
 .compass-button {
   box-shadow: 0 14px 35px rgba(15, 23, 42, 0.9);
 }
@@ -163,12 +161,12 @@ nav {
   box-shadow: 0 20px 45px rgba(15, 23, 42, 1);
 }
 
-/* FOOTER SOSIAL ICONLARI PARILDASIN */
+
 .social-link {
   box-shadow: 0 10px 25px rgba(15, 23, 42, 0.7);
 }
 
-/* HERO RƏSM HOVER EFFEKTI */
+
 .hero-image-container {
   transform-origin: center;
   transition: transform 0.8s ease, box-shadow 0.8s ease;
@@ -227,7 +225,7 @@ nav {
   box-shadow: 0 8px 20px rgba(59, 130, 246, 0.4);
 }
 
-/* NAV-dan aşağı hissə */
+
 .welcome-page {
   max-width: 1200px;
   margin: 0 auto;
@@ -235,16 +233,14 @@ nav {
   position: relative;
 }
 
-/* HERO mərkəzləşmə */
+
 .welcome-hero {
   text-align: center;
   position: relative;
   z-index: 2;
 }
 
-/* ===========================
-   ORBIT / TEKER ANİMASİYASI
-=========================== */
+
 
 .welcome-orbit {
   width: 180px;
@@ -264,7 +260,7 @@ nav {
     orbitRotate 22s linear infinite;
 }
 
-/* iç dairə + ikon */
+
 .welcome-orbit-inner {
   width: 90px;
   height: 90px;
@@ -284,7 +280,7 @@ nav {
   animation: iconFloat 3.2s ease-in-out infinite;
 }
 
-/* orbit kənarında dashed halqa */
+
 .welcome-orbit::before {
   content: "";
   position: absolute;
@@ -295,7 +291,7 @@ nav {
   animation: ringRotate 18s linear infinite;
 }
 
-/* orbit nöqtələri */
+
 .orbit-dot {
   position: absolute;
   width: 16px;
@@ -306,7 +302,7 @@ nav {
   animation: dotPulse 2.8s ease-in-out infinite alternate;
 }
 
-/* dairə ətrafında yerləşmə */
+
 .d1 { top: -6px; left: 50%; transform: translateX(-50%); }
 .d2 { top: 18%; right: -4px; }
 .d3 { top: 50%; right: -10px; transform: translateY(-50%); }
@@ -316,7 +312,7 @@ nav {
 .d7 { top: 50%; left: -10px; transform: translateY(-50%); }
 .d8 { top: 18%; left: -4px; }
 
-/* hər nöqtəyə fərqli delay */
+
 .d1 { animation-delay: 0s; }
 .d2 { animation-delay: 0.2s; }
 .d3 { animation-delay: 0.4s; }
@@ -326,7 +322,7 @@ nav {
 .d7 { animation-delay: 1.2s; }
 .d8 { animation-delay: 1.4s; }
 
-/* hover zamanı super glow */
+
 .welcome-orbit.orbit-boost {
   box-shadow:
     0 0 60px rgba(129, 140, 248, 1),
@@ -335,7 +331,7 @@ nav {
   transform: scale(1.04);
 }
 
-/* ANİMASİYA KEYS */
+
 
 @keyframes orbitPulse {
   0%, 100% { transform: scale(1); }
@@ -360,9 +356,7 @@ nav {
   to   { transform: scale(1.15); opacity: 1; }
 }
 
-/* ===========================
-   MƏTN
-=========================== */
+
 
 .welcome-title {
   font-size: 44px;
@@ -384,9 +378,7 @@ nav {
   color: #cbd5f5;
 }
 
-/* ===========================
-   DÜYMƏLƏR
-=========================== */
+
 
 .welcome-actions {
   display: flex;
@@ -443,9 +435,7 @@ nav {
   color: #e5e7eb;
 }
 
-/* ===========================
-   ARXA FON BUBL-lar
-=========================== */
+
 
 .bg-bubble {
   position: absolute;
@@ -469,9 +459,7 @@ nav {
   100% { transform: translateY(0); }
 }
 
-/* ===========================
-   RESPONSIVE
-=========================== */
+
 
 @media (max-width: 768px) {
   .welcome-page {
@@ -496,7 +484,7 @@ nav {
     font-size: 14px;
   }
 }
-/* Footer */
+
 footer {
   padding: 60px 60px 40px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -589,3 +577,5 @@ footer {
   background: rgba(59, 130, 246, 0.3);
   transform: translateY(-2px);
 }
+
+

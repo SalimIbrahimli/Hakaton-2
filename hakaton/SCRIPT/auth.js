@@ -1,12 +1,8 @@
-// ============================
-// AZ LAND / TravelX - AUTH
-// LocalStorage "database"
-// ============================
-
+﻿
 const USERS_KEY = "travelxUsers";
 const CURRENT_USER_KEY = "travelxCurrentUser";
 
-// ---- helpers ----
+
 function getUsers() {
   const raw = localStorage.getItem(USERS_KEY);
   if (!raw) return [];
@@ -39,9 +35,7 @@ function logoutUser() {
   localStorage.removeItem(CURRENT_USER_KEY);
 }
 
-// ============================
-// NAVBAR LOGIN STATE
-// ============================
+
 function updateNavUserState() {
   const loginLink = document.getElementById("loginLink");
   if (!loginLink) return;
@@ -49,26 +43,24 @@ function updateNavUserState() {
   const user = getCurrentUser();
 
   if (!user) {
-    // Heç kim login olmayıb
-    loginLink.textContent = "Giriş";
+  
+    loginLink.textContent = "GiriÅŸ";
     loginLink.href = "./login.html";
     loginLink.onclick = null;
   } else {
-    // Login olmuş istifadəçi
-    loginLink.textContent = user.name + " • Çıxış";
+    
+    loginLink.textContent = user.name + " â€¢ Ã‡Ä±xÄ±ÅŸ";
     loginLink.href = "#";
     loginLink.onclick = (e) => {
       e.preventDefault();
       logoutUser();
-      // Sadə refresh kifayətdir
+      
       window.location.reload();
     };
   }
 }
 
-// ============================
-// Səhifəni login tələb etmə
-// ============================
+
 function requireAuth(redirectToLogin = true) {
   const user = getCurrentUser();
   if (!user && redirectToLogin) {
@@ -78,14 +70,12 @@ function requireAuth(redirectToLogin = true) {
   return user;
 }
 
-// ============================
-// DOM hazır olanda bütün məntiq
-// ============================
+
 document.addEventListener("DOMContentLoaded", () => {
-  // Navbar vəziyyətini yenilə
+
   updateNavUserState();
 
-  // -------- REGISTER (Sign Up panel) --------
+ 
   const registerForm = document.getElementById("registerForm");
   if (registerForm) {
     registerForm.addEventListener("submit", (e) => {
@@ -102,10 +92,10 @@ document.addEventListener("DOMContentLoaded", () => {
       const email = emailInput.value.trim().toLowerCase();
       const password = passInput.value.trim();
 
-      // Sadə yoxlamalar
+  
       if (!name || !email || !password) {
         if (errorBox) {
-          errorBox.textContent = "Bütün xanaları doldurun.";
+          errorBox.textContent = "BÃ¼tÃ¼n xanalarÄ± doldurun.";
           errorBox.style.display = "block";
         }
         if (successBox) successBox.style.display = "none";
@@ -114,7 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (password.length < 6) {
         if (errorBox) {
-          errorBox.textContent = "Şifrə ən az 6 simvol olsun.";
+          errorBox.textContent = "ÅžifrÉ™ É™n az 6 simvol olsun.";
           errorBox.style.display = "block";
         }
         if (successBox) successBox.style.display = "none";
@@ -126,7 +116,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (exists) {
         if (errorBox) {
-          errorBox.textContent = "Bu e-poçt ilə artıq qeydiyyat var.";
+          errorBox.textContent = "Bu e-poÃ§t ilÉ™ artÄ±q qeydiyyat var.";
           errorBox.style.display = "block";
         }
         if (successBox) successBox.style.display = "none";
@@ -137,7 +127,7 @@ document.addEventListener("DOMContentLoaded", () => {
         id: Date.now(),
         name,
         email,
-        password, // DEMO – real sistemdə hash olmalıdır
+        password, 
       };
 
       users.push(newUser);
@@ -150,17 +140,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (errorBox) errorBox.style.display = "none";
       if (successBox) {
-        successBox.textContent = "Qeydiyyat uğurludur! Yönləndirilirsiniz...";
+        successBox.textContent = "Qeydiyyat uÄŸurludur! YÃ¶nlÉ™ndirilirsiniz...";
         successBox.style.display = "block";
       }
 
       setTimeout(() => {
-        window.location.href = "./welcome.html"; // xoş gəldin səhifən
+        window.location.href = "./welcome.html";
       }, 800);
     });
   }
 
-  // -------- LOGIN (Sign In panel) --------
   const loginForm = document.getElementById("loginForm");
   if (loginForm) {
     loginForm.addEventListener("submit", (e) => {
@@ -182,7 +171,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (!found) {
         if (errorBox) {
-          errorBox.textContent = "E-poçt və ya şifrə yanlışdır.";
+          errorBox.textContent = "E-poÃ§t vÉ™ ya ÅŸifrÉ™ yanlÄ±ÅŸdÄ±r.";
           errorBox.style.display = "block";
         }
         if (successBox) successBox.style.display = "none";
@@ -193,7 +182,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (errorBox) errorBox.style.display = "none";
       if (successBox) {
-        successBox.textContent = "Uğurla daxil oldunuz!";
+        successBox.textContent = "UÄŸurla daxil oldunuz!";
         successBox.style.display = "block";
       }
 
@@ -203,12 +192,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // -------- XOŞ GƏLMİSƏN səhifəsi --------
   const welcomeNameEl = document.getElementById("welcomeName");
   if (welcomeNameEl) {
-    const user = requireAuth(true); // login deyilsə loginə at
+    const user = requireAuth(true); // login deyilsÉ™ loginÉ™ at
     if (user) {
       welcomeNameEl.textContent = user.name + "!";
     }
   }
 });
+
+

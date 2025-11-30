@@ -1,4 +1,4 @@
-body {
+﻿body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: var(--mainbg);
   color: #fff;
@@ -8,7 +8,7 @@ body {
   flex-direction: column;
   align-items: center;
 }
-/* Navigation */
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -79,7 +79,7 @@ nav {
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(59, 130, 246, 0.4);
 }
-/* SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
+
 .contact-header {
   text-align: center;
   margin-bottom: 40px;
@@ -354,7 +354,7 @@ input[type="file"] {
     opacity: 1;
   }
 }
-/* Footer */
+
 footer {
   padding: 60px 60px 40px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -447,7 +447,7 @@ footer {
   background: rgba(59, 130, 246, 0.3);
   transform: translateY(-2px);
 }
-/* NAVBAR ALT XƏTT EFFEKTI */
+
 .nav-links a {
   position: relative;
   padding-bottom: 4px;
@@ -470,7 +470,7 @@ footer {
   width: 100%;
 }
 
-/* KARTLARA PREMIUM BOX-SHADOW */
+
 .feature-card,
 .destination-card,
 .tip-card,
@@ -495,7 +495,7 @@ footer {
   transform: translateY(-6px) scale(1.01);
 }
 
-/* ICONLU BLOKLARA BOX-SHADOW */
+
 .feature-icon,
 .destination-icon,
 .tip-icon,
@@ -514,7 +514,7 @@ footer {
   box-shadow: 0 18px 40px rgba(15, 23, 42, 0.95);
 }
 
-/* CLICK OLANDA FİRLƏNMƏ EFFEKTI */
+
 .icon-click-spin {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
@@ -523,7 +523,7 @@ footer {
   transform: scale(0.9) rotate(-10deg);
 }
 
-/* TREND FAİZ ZOLAQLARI ANİMASİYA ÜÇÜN */
+
 .popularity-fill {
   height: 100%;
   border-radius: 3px;
@@ -531,7 +531,7 @@ footer {
   width: 0;
 }
 
-/* SCROLL-LA GƏLƏN ANİMASİYA */
+
 .reveal {
   opacity: 0;
   transform: translateY(30px) scale(0.98);
@@ -553,7 +553,7 @@ footer {
   transition-delay: 0.3s;
 }
 
-/* CHAT BUTTON PARILDAMA + NƏFƏS ANİMASİYASI */
+
 .chat-button {
   animation: chatPulse 2.4s ease-in-out infinite;
 }
@@ -580,7 +580,7 @@ footer {
   }
 }
 
-/* KOMPAS BUTTON PARLAQLIQ */
+
 .compass-button {
   box-shadow: 0 14px 35px rgba(15, 23, 42, 0.9);
 }
@@ -589,12 +589,12 @@ footer {
   box-shadow: 0 20px 45px rgba(15, 23, 42, 1);
 }
 
-/* FOOTER SOSIAL ICONLARI PARILDASIN */
+
 .social-link {
   box-shadow: 0 10px 25px rgba(15, 23, 42, 0.7);
 }
 
-/* HERO RƏSM HOVER EFFEKTI */
+
 .hero-image-container {
   transform-origin: center;
   transition: transform 0.8s ease, box-shadow 0.8s ease;
@@ -604,3 +604,5 @@ footer {
   transform: translateY(-10px) scale(1.02);
   box-shadow: 0 26px 70px rgba(0, 0, 0, 0.65);
 }
+
+

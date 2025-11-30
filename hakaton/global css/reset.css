@@ -1,13 +1,13 @@
-/* CSS Reset */
+﻿
 
-/* Remove default margin and padding from all elements */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Reset HTML5 display-role reset for older browsers */
+
 article,
 aside,
 details,
@@ -22,7 +22,7 @@ section {
   display: block;
 }
 
-/* Set a base font and remove default styling */
+
 html,
 body {
   height: 100%;
@@ -30,13 +30,13 @@ body {
   color: #333;    
 }
 
-/* Remove list styles */
+
 ol,
 ul {
   list-style: none;
 }
 
-/* Remove quotes from blockquotes and q elements */
+
 blockquote,
 q {
   quotes: none;
@@ -50,13 +50,13 @@ q:after {
   content: none;
 }
 
-/* Reset table styling */
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* Remove default button styling */
+
 button {
   background: none;
   border: none;
@@ -65,7 +65,7 @@ button {
   font-size: inherit;
 }
 
-/* Remove default input styling */
+
 input,
 textarea,
 select {
@@ -75,13 +75,13 @@ select {
   outline: none;
 }
 
-/* Remove default link styling */
+
 a {
   text-decoration: none;
   color: inherit;
 }
 
-/* Reset heading styles */
+
 h1,
 h2,
 h3,
@@ -92,7 +92,7 @@ h6 {
   font-size: inherit;
 }
 
-/* Reset emphasis elements */
+
 b,
 strong {
   font-weight: normal;
@@ -103,14 +103,14 @@ em {
   font-style: normal;
 }
 
-/* Reset image styling */
+
 img {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
-/* Reset form elements */
+
 fieldset {
   border: none;
 }
@@ -119,24 +119,24 @@ legend {
   display: block;
 }
 
-/* Reset HR styling */
+
 hr {
   border: none;
   height: 1px;
   background: #ccc;
 }
 
-/* Reset address styling */
+
 address {
   font-style: normal;
 }
 
-/* Reset caption styling */
+
 caption {
   text-align: left;
 }
 
-/* Reset del and ins styling */
+
 del {
   text-decoration: none;
 }
@@ -144,3 +144,5 @@ del {
 ins {
   text-decoration: none;
 }
+
+

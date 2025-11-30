@@ -1,4 +1,4 @@
-body {
+﻿body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: var(--mainbg);
   color: #fff;
@@ -6,9 +6,9 @@ body {
   padding: 40px 20px;
 }
 
-/* ===================== */
-/* ==== GLOBAL BODY ==== */
-/* ===================== */
+
+
+
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -18,9 +18,9 @@ body {
   overflow-x: hidden;
 }
 
-/* ===================== */
-/* ===== NAVBAR =========*/
-/* ===================== */
+
+
+
 
 nav {
   display: flex;
@@ -69,7 +69,7 @@ nav {
   color: #60a5fa;
 }
 
-/* alt xətt effekti */
+
 .nav-links a::after {
   content: "";
   position: absolute;
@@ -112,7 +112,7 @@ nav {
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(59, 130, 246, 0.4);
 }
-/* MAIN */ /* MAIN */ /* MAIN */ /* MAIN */
+   
 
 .container {
   max-width: 1200px;
@@ -120,7 +120,7 @@ nav {
   padding-top: 100px;
 }
 
-/* Profile Header */
+
 .profile-header {
   background: rgba(30, 50, 90, 0.6);
   border-radius: 20px;
@@ -226,7 +226,7 @@ nav {
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* Points System */
+
 .points-section {
   background: rgba(30, 50, 90, 0.6);
   border-radius: 20px;
@@ -301,7 +301,7 @@ nav {
   color: #5b9fff;
 }
 
-/* Visited Places */
+
 .places-section {
   background: rgba(30, 50, 90, 0.6);
   border-radius: 20px;
@@ -361,7 +361,7 @@ nav {
   color: #ff4757;
 }
 
-/* Achievements */
+
 .achievements-section {
   background: rgba(30, 50, 90, 0.6);
   border-radius: 20px;
@@ -449,7 +449,7 @@ nav {
   border-radius: 2px;
 }
 
-/* Activity Timeline */
+
 .timeline-section {
   background: rgba(30, 50, 90, 0.6);
   border-radius: 20px;
@@ -553,7 +553,7 @@ nav {
   background: rgba(100, 150, 255, 0.2);
 }
 
-/* Stats Cards Bottom */
+
 .stats-bottom {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -579,7 +579,7 @@ nav {
   font-size: 13px;
   color: rgba(255, 255, 255, 0.6);
 }
-/* Footer */
+
 footer {
   padding: 60px 60px 40px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -672,3 +672,5 @@ footer {
   background: rgba(59, 130, 246, 0.3);
   transform: translateY(-2px);
 }
+
+

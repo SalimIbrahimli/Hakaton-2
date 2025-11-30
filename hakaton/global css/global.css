@@ -1,7 +1,4 @@
-/* ============================
-   PREMIUM POPUP BANNER
-============================ */
-.promo-banner {
+﻿.promo-banner {
   position: fixed;
   bottom: 30px;
   right: 30px;
@@ -25,28 +22,22 @@
   transform: scale(0.92);
   filter: brightness(1.2);
 }
-/* göstəriləndə */
 .promo-banner.show {
   opacity: 1;
   transform: translateY(0);
 }
-
-/* hover effekti */
 .promo-banner:hover {
   transform: translateY(-6px) scale(1.03);
   box-shadow: 0 15px 40px rgba(255, 115, 50, 0.55);
 }
-
 .promo-icon {
   font-size: 26px;
 }
-
 .promo-text h3 {
   font-size: 17px;
   margin: 0;
   font-weight: 700;
 }
-
 .promo-text p {
   font-size: 13px;
   margin: 0;

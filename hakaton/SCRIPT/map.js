@@ -1,4 +1,4 @@
-const tooltip = document.getElementById("mapTooltip");
+﻿const tooltip = document.getElementById("mapTooltip");
 const tooltipCountry = tooltip.querySelector(".tooltip-country");
 const tooltipPrice = tooltip.querySelector(".tooltip-price");
 
@@ -12,7 +12,7 @@ document.querySelectorAll(".map-point").forEach((point) => {
     const price = point.dataset.price;
 
     tooltipCountry.textContent = country;
-    tooltipPrice.textContent = price === "Ev Şəhər" ? price : `$${price}`;
+    tooltipPrice.textContent = price === "Ev ÅžÉ™hÉ™r" ? price : `$${price}`;
 
     const rect = point.getBoundingClientRect();
     tooltip.style.left = rect.left + rect.width / 2 + "px";
@@ -31,7 +31,6 @@ document.querySelectorAll(".map-point").forEach((point) => {
     tooltip.style.opacity = 0;
   });
 
-  // Kartı doldur
   point.addEventListener("click", () => {
     const city = point.dataset.city;
     const country = point.dataset.country;
@@ -39,6 +38,8 @@ document.querySelectorAll(".map-point").forEach((point) => {
 
     cardCity.textContent = city;
     cardCountry.textContent = country;
-    cardPrice.textContent = price === "Ev Şəhər" ? "Ev Şəhər" : `$${price}`;
+    cardPrice.textContent = price === "Ev ÅžÉ™hÉ™r" ? "Ev ÅžÉ™hÉ™r" : `$${price}`;
   });
 });
+
+

@@ -1,19 +1,19 @@
-// ===============================
-//  AZ / EN / RU TRANSLATION SYS
-// ===============================
+﻿
+
+
 
 const translations = {
   az: {
-    nav_home: "Ana Səhifə",
-    nav_map: "Xəritə",
+    nav_home: "Ana SÉ™hifÉ™",
+    nav_map: "XÉ™ritÉ™",
     nav_faq: "FAQ",
-    nav_about: "Haqqımızda",
-    nav_contact: "Əlaqə",
-    nav_prices: "Qiymətlər",
-    nav_login: "Giriş",
+    nav_about: "HaqqÄ±mÄ±zda",
+    nav_contact: "ÆlaqÉ™",
+    nav_prices: "QiymÉ™tlÉ™r",
+    nav_login: "GiriÅŸ",
     nav_profile: "Profil",
-    nav_logout: "Çıxış",
-    footer_rights: "© 2024 AZ Land. Bütün hüquqlar qorunur.",
+    nav_logout: "Ã‡Ä±xÄ±ÅŸ",
+    footer_rights: "Â© 2024 AZ Land. BÃ¼tÃ¼n hÃ¼quqlar qorunur.",
   },
   en: {
     nav_home: "Home",
@@ -25,19 +25,19 @@ const translations = {
     nav_login: "Login",
     nav_profile: "Profile",
     nav_logout: "Logout",
-    footer_rights: "© 2024 AZ Land. All rights reserved.",
+    footer_rights: "Â© 2024 AZ Land. All rights reserved.",
   },
   ru: {
-    nav_home: "Главная",
-    nav_map: "Карта",
+    nav_home: "Ð“Ð»Ð°Ð²Ð½Ð°Ñ",
+    nav_map: "ÐšÐ°Ñ€Ñ‚Ð°",
     nav_faq: "FAQ",
-    nav_about: "О нас",
-    nav_contact: "Контакты",
-    nav_prices: "Цены",
-    nav_login: "Войти",
-    nav_profile: "Профиль",
-    nav_logout: "Выйти",
-    footer_rights: "© 2024 AZ Land. Все права защищены.",
+    nav_about: "Ðž Ð½Ð°Ñ",
+    nav_contact: "ÐšÐ¾Ð½Ñ‚Ð°ÐºÑ‚Ñ‹",
+    nav_prices: "Ð¦ÐµÐ½Ñ‹",
+    nav_login: "Ð’Ð¾Ð¹Ñ‚Ð¸",
+    nav_profile: "ÐŸÑ€Ð¾Ñ„Ð¸Ð»ÑŒ",
+    nav_logout: "Ð’Ñ‹Ð¹Ñ‚Ð¸",
+    footer_rights: "Â© 2024 AZ Land. Ð’ÑÐµ Ð¿Ñ€Ð°Ð²Ð° Ð·Ð°Ñ‰Ð¸Ñ‰ÐµÐ½Ñ‹.",
   },
 };
 
@@ -95,3 +95,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
   applyTranslations(currentLang);
 });
+
+

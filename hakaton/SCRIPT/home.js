@@ -1,6 +1,6 @@
-// ===============================
-// SMOOTH SCROLL (əgər # ilə işlənəcəksə)
-// ===============================
+﻿
+
+
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     const href = this.getAttribute("href");
@@ -14,29 +14,26 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-// ===============================
-// CHAT BUTTON (AI CHAT)
-// ===============================
+
+
 const chatButton = document.querySelector(".chat-button");
 if (chatButton) {
   chatButton.addEventListener("click", () => {
-    alert("AI TravelX chat açılır...");
+    alert("AI TravelX chat aÃ§Ä±lÄ±r...");
   });
 }
 
-// ===============================
-// COMPASS BUTTON
-// ===============================
+
+
 const compassButton = document.querySelector(".compass-button");
 if (compassButton) {
   compassButton.addEventListener("click", () => {
-    alert("İnteraktiv xəritə açılır...");
+    alert("Ä°nteraktiv xÉ™ritÉ™ aÃ§Ä±lÄ±r...");
   });
 }
 
-// ===============================
-// NAVBAR ACTIVE CLASS
-// ===============================
+
+
 const navLinks = document.querySelectorAll(".nav-links a");
 if (navLinks.length) {
   navLinks.forEach((link) => {
@@ -47,9 +44,8 @@ if (navLinks.length) {
   });
 }
 
-// ===============================
-// SCROLL-LA EKRANA GƏLƏN ANİMASİYA (REVEAL)
-// ===============================
+
+
 const revealElements = document.querySelectorAll(
   ".hero-left, .hero-right, .feature-card, .destination-card, .tip-card, .cta-section, .footer-brand, .footer-column"
 );
@@ -74,9 +70,8 @@ revealElements.forEach((el, idx) => {
   revealObserver.observe(el);
 });
 
-// ===============================
-// TREND SƏYAHƏTLƏRDƏ FAİZLƏRİN 0-DAN QALXMASI
-// ===============================
+
+
 const trendingSection = document.querySelector(".trending");
 
 if (trendingSection) {
@@ -109,9 +104,8 @@ if (trendingSection) {
   popularityObserver.observe(trendingSection);
 }
 
-// ===============================
-// ICONLARA CLICK-SPIN CLASSI VER
-// ===============================
+
+
 const iconTargets = document.querySelectorAll(
   ".feature-icon, .destination-icon, .tip-icon, .chat-button, .compass-button, .direction-btn, .social-link, .logo"
 );
@@ -119,3 +113,5 @@ const iconTargets = document.querySelectorAll(
 iconTargets.forEach((el) => {
   el.classList.add("icon-click-spin");
 });
+
+

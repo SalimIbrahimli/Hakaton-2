@@ -1,4 +1,4 @@
-// Counter animation
+﻿
         function animateCounter(el) {
             const target = parseInt(el.getAttribute('data-target'));
             const duration = 2000;
@@ -20,7 +20,7 @@
             }, 16);
         }
 
-        // Intersection Observer for stats
+     
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -34,7 +34,7 @@
         const statsSection = document.querySelector('.stats');
         observer.observe(statsSection);
 
-        // Add hover effect to feature cards
+     
         const featureCards = document.querySelectorAll('.feature-card');
         featureCards.forEach(card => {
             card.addEventListener('mouseenter', function() {
@@ -44,7 +44,7 @@
                 this.style.boxShadow = 'none';
             });
         });                 
-        // Counter animation
+      
 function animateCounter(el) {
     const target = parseInt(el.getAttribute('data-target'));
     const duration = 2000;
@@ -54,7 +54,7 @@ function animateCounter(el) {
     const timer = setInterval(() => {
         current += step;
         if (current >= target) {
-            // SON DƏYƏR – yalnız + 
+           
             if (target >= 1000) {
                 el.textContent = (target / 1000) + 'K+';
             } else {
@@ -62,7 +62,7 @@ function animateCounter(el) {
             }
             clearInterval(timer);
         } else {
-            // Animasiyanın gedişi
+            
             if (target >= 1000) {
                 el.textContent = Math.floor(current / 1000) + 'K+';
             } else {
@@ -71,3 +71,5 @@ function animateCounter(el) {
         }
     }, 16);
 }
+
+

@@ -1,4 +1,4 @@
-// SCRIPT/prices.js
+﻿
 
 document.addEventListener("DOMContentLoaded", () => {
   const ctaButtons = document.querySelectorAll(".route-cta");
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const priceText = card
         .querySelector(".route-price .price")
-        .textContent.trim(); // "180 ₼"
+        .textContent.trim(); // "180 â‚¼"
       const price = parseInt(priceText, 10); // 180
 
       const selectedTour = {
@@ -38,8 +38,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
       localStorage.setItem("selectedTour", JSON.stringify(selectedTour));
 
-      // price.html ilə eyni qovluqda olan checkout səhifəsi
       window.location.href = "./checkout.html";
     });
   });
 });
+
+

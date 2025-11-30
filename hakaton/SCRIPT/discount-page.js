@@ -1,4 +1,4 @@
-// Kupon copy (sadə demo)
+﻿
 document.querySelectorAll(".copy-btn").forEach((btn) => {
   btn.addEventListener("click", () => {
     const code = btn
@@ -9,3 +9,5 @@ document.querySelectorAll(".copy-btn").forEach((btn) => {
     setTimeout(() => btn.classList.remove("copied"), 800);
   });
 });
+
+

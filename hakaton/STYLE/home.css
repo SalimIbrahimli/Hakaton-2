@@ -1,6 +1,6 @@
-/* ===================== */
-/* ==== GLOBAL BODY ==== */
-/* ===================== */
+﻿
+
+
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -10,9 +10,9 @@ body {
   overflow-x: hidden;
 }
 
-/* ===================== */
-/* ===== NAVBAR =========*/
-/* ===================== */
+
+
+
 
 nav {
   display: flex;
@@ -61,7 +61,7 @@ nav {
   color: #60a5fa;
 }
 
-/* alt xətt effekti */
+
 .nav-links a::after {
   content: "";
   position: absolute;
@@ -104,11 +104,11 @@ nav {
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(59, 130, 246, 0.4);
 }
-/* VIDEO */
+
 .hero {
   position: relative;
   width: 100%;
-  height: 100vh; /* tam ekran */
+  height: 100vh; 
   overflow: hidden;
 }
 
@@ -123,7 +123,7 @@ nav {
   transform: translate(-50%, -50%);
   object-fit: cover;
   z-index: -1;
-  filter: brightness(0.85); /* istəyə görə */
+  filter: brightness(0.85); 
 }
 
 .hero-content {
@@ -141,16 +141,16 @@ nav {
   letter-spacing: 2px;
 }
 
-/* ===================== */
-/* ===== HERO ===========*/
-/* ===================== */
+
+
+
 
 .hero {
   min-height: 100vh;
   display: flex;
   align-items: center;
   padding: 0 60px;
-  padding-top: 100px; /* navbar üçün yer */
+  padding-top: 100px; 
   position: relative;
   background: linear-gradient(135deg, #061321 0%, #0a1830 50%, #061321 100%);
 }
@@ -240,7 +240,7 @@ nav {
   background: rgba(255, 255, 255, 0.05);
 }
 
-/* Hero Right - Image */
+
 
 .hero-right {
   flex: 1;
@@ -260,7 +260,7 @@ nav {
   transition: transform 0.8s ease, box-shadow 0.8s ease;
 }
 
-/* Figma overlay effekti */
+
 .hero-image-container::after {
   content: "";
   position: absolute;
@@ -301,9 +301,9 @@ nav {
   }
 }
 
-/* ===================== */
-/* = FEATURES SECTION == */
-/* ===================== */
+
+
+
 
 .features-section {
   padding: 80px 60px 40px;
@@ -379,9 +379,9 @@ nav {
   letter-spacing: -0.1px;
 }
 
-/* ============================= */
-/* ==== POPULAR BÖLGƏLƏR ======= */
-/* ============================= */
+
+
+
 
 .popular-section {
   padding: 40px 60px 80px;
@@ -417,7 +417,7 @@ nav {
   gap: 24px;
 }
 
-/* Route cards */
+
 
 .route-card {
   background: linear-gradient(
@@ -540,7 +540,7 @@ nav {
   box-shadow: 0 0 20px currentColor;
 }
 
-/* Card rəngləri */
+
 
 .card-1 .icon-badge {
   background: rgba(255, 193, 7, 0.15);
@@ -620,9 +620,9 @@ nav {
   background: linear-gradient(90deg, #dd4125, #ff6347);
 }
 
-/* ===================== */
-/* ==== TIPS SECTION ====*/
-/* ===================== */
+
+
+
 
 .tips {
   padding: 80px 60px;
@@ -690,9 +690,9 @@ nav {
   line-height: 1.6;
 }
 
-/* ===================== */
-/* ===== CTA SECTION ====*/
-/* ===================== */
+
+
+
 
 .cta-section {
   padding: 80px 60px;
@@ -720,9 +720,9 @@ nav {
   margin-bottom: 40px;
 }
 
-/* ===================== */
-/* ===== FOOTER =========*/
-/* ===================== */
+
+
+
 
 footer {
   padding: 60px 60px 40px;
@@ -817,9 +817,9 @@ footer {
   transform: translateY(-2px);
 }
 
-/* ===================== */
-/* === COMPASS BUTTON ===*/
-/* ===================== */
+
+
+
 
 .compass-button {
   position: fixed;
@@ -988,7 +988,7 @@ footer {
   letter-spacing: -0.1px;
 }
 
-/* Card 1 - Blue */
+
 .card-1 .tip-icon-wrapper {
   background: rgba(91, 159, 255, 0.15);
 }
@@ -999,7 +999,7 @@ footer {
   color: #a8d0ff;
 }
 
-/* Card 2 - Purple/Pink */
+
 .card-2 .tip-icon-wrapper {
   background: rgba(199, 125, 255, 0.15);
 }
@@ -1010,7 +1010,7 @@ footer {
   color: #d9b3ff;
 }
 
-/* Card 3 - Green/Cyan */
+
 .card-3 .tip-icon-wrapper {
   background: rgba(0, 255, 163, 0.15);
 }
@@ -1021,9 +1021,9 @@ footer {
   color: #7fffd4;
 }
 
-/* ============================= */
-/* FULLSCREEN INTRO VIDEO        */
-/* ============================= */
+
+
+
 .fullscreen-video {
   position: fixed;
   top: 0;
@@ -1055,3 +1055,5 @@ footer {
   pointer-events: none;
   transition: opacity 0.8s ease;
 }
+
+

@@ -1,5 +1,5 @@
-/* NAV */
-/* Navigation */
+﻿
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -12,7 +12,7 @@ nav {
   background: rgba(15, 28, 46, 0.9);
   backdrop-filter: blur(10px);
 }
-/* NAVBAR ALT XƏTT EFFEKTI */
+
 .nav-links a {
   position: relative;
   padding-bottom: 4px;
@@ -35,7 +35,7 @@ nav {
   width: 100%;
 }
 
-/* KARTLARA PREMIUM BOX-SHADOW */
+
 .feature-card,
 .destination-card,
 .tip-card,
@@ -60,7 +60,7 @@ nav {
   transform: translateY(-6px) scale(1.01);
 }
 
-/* ICONLU BLOKLARA BOX-SHADOW */
+
 .feature-icon,
 .destination-icon,
 .tip-icon,
@@ -79,7 +79,7 @@ nav {
   box-shadow: 0 18px 40px rgba(15, 23, 42, 0.95);
 }
 
-/* CLICK OLANDA FİRLƏNMƏ EFFEKTI */
+
 .icon-click-spin {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
@@ -88,7 +88,7 @@ nav {
   transform: scale(0.9) rotate(-10deg);
 }
 
-/* TREND FAİZ ZOLAQLARI ANİMASİYA ÜÇÜN */
+
 .popularity-fill {
   height: 100%;
   border-radius: 3px;
@@ -96,7 +96,7 @@ nav {
   width: 0;
 }
 
-/* SCROLL-LA GƏLƏN ANİMASİYA */
+
 .reveal {
   opacity: 0;
   transform: translateY(30px) scale(0.98);
@@ -118,7 +118,7 @@ nav {
   transition-delay: 0.3s;
 }
 
-/* CHAT BUTTON PARILDAMA + NƏFƏS ANİMASİYASI */
+
 .chat-button {
   animation: chatPulse 2.4s ease-in-out infinite;
 }
@@ -145,7 +145,7 @@ nav {
   }
 }
 
-/* KOMPAS BUTTON PARLAQLIQ */
+
 .compass-button {
   box-shadow: 0 14px 35px rgba(15, 23, 42, 0.9);
 }
@@ -154,12 +154,12 @@ nav {
   box-shadow: 0 20px 45px rgba(15, 23, 42, 1);
 }
 
-/* FOOTER SOSIAL ICONLARI PARILDASIN */
+
 .social-link {
   box-shadow: 0 10px 25px rgba(15, 23, 42, 0.7);
 }
 
-/* HERO RƏSM HOVER EFFEKTI */
+
 .hero-image-container {
   transform-origin: center;
   transition: transform 0.8s ease, box-shadow 0.8s ease;
@@ -217,7 +217,7 @@ nav {
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(59, 130, 246, 0.4);
 }
-/* BODY */
+
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -425,7 +425,7 @@ body {
     transform: translateY(0);
   }
 }
-/* Footer */
+
 footer {
   padding: 60px 60px 40px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -518,3 +518,5 @@ footer {
   background: rgba(59, 130, 246, 0.3);
   transform: translateY(-2px);
 }
+
+
